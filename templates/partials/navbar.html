@@ -1,0 +1,73 @@
+	<!-- header -->
+
+	<!-- //top-bar -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		.navbar
+	{
+		margin-bottom: 0;
+		background-color: #f4511e;
+		padding: 30px;
+		font-size: 12px !important;
+		line-height: 1.42857143 !important;
+		letter-spacing: 4px;
+		word-spacing: 10px;
+		font-family: Montserrat, sans-serif;
+	}
+	.navbar-brand
+	{
+		width: 100px;
+	}
+.navbar li a, .navbar .navbar-brand
+	{
+		color: black!important;
+	}
+	</style>
+	<!-- header 2 -->
+	<div id="home">
+		<!-- navigation -->
+		<div class="main-top py-1" >
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					<!-- logo -->
+					<nav class="navbar navbar-default navbar-fixed-top">
+						<div class="container">
+						<div class="navbar-header">
+						<a class="navbar-brand" href="{% url 'home' %}" > Online Health Care</a>
+						   </div>
+						   <div class="collapse navbar-collapse" id="myNavbar">
+							 <ul class="nav navbar-nav navbar-right">
+								<li><a class="nav-link" href="{% url 'home' %}" style="color: black;">|Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							   <li><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false" style="color: black;">
+							|	|Service|
+
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+								<a class="dropdown-item " href="{% url 'diabetes' %}">Diabetes </a>
+								<a class="dropdown-item " href="{% url 'covid' %}">Covid </a>
+								<a class="dropdown-item " href="{% url 'alcohol' %}">Alcohol </a>
+							</div></li>
+							  
+							 </ul>
+						   </div>
+						 </div>
+					   </nav>
+				
+					<!-- //logo -->
+					
+			</nav>
+		</div>
+	
+	</div>
+	<!-- //header 2 -->
